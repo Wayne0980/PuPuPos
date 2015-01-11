@@ -24,13 +24,16 @@ public class RegObject {
 			xshfit = 20;
 			yshfit = 85;
 			la1.setForeground(Color.ORANGE);
+			la1.setBounds(xshfit+(xpos*width),yshfit+(ypos*height),width,height);
+			
 		}else{
 			xshfit = 30;
 			yshfit = 40;
 			la1.setForeground(Color.WHITE);
+			la1.setBounds(xshfit+(xpos*xshfit),yshfit+(ypos*height),width,height);
+			
 		}
 		la1.setFont(new java.awt.Font("Dialog",1,15));   
-		la1.setBounds(xshfit+(xpos*width),yshfit+(ypos*height),width,height);
 		pal2.add(la1);
 
 	}

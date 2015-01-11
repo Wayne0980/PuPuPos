@@ -20,8 +20,6 @@ import javax.swing.JTextField;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-
-
 public class AddNewPercon extends JFrame implements ActionListener,ItemListener{
 	DBlog NameInfo = new DBlog();
 	RegObject Reg = new RegObject();
@@ -67,11 +65,8 @@ public class AddNewPercon extends JFrame implements ActionListener,ItemListener{
 		RegBtn("確定", "enter2", 11, pal3);
 		RegBtn("取消", "close2", 10, pal3);
 		pal3.add(img);
-
 		Mainpal.add(pal3, BorderLayout.CENTER);
-
 		Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
-
 		Container content;
 		content = frm2.getContentPane();
 		JFrame.setDefaultLookAndFeelDecorated(true);
@@ -85,11 +80,10 @@ public class AddNewPercon extends JFrame implements ActionListener,ItemListener{
 		frm2.setVisible(true);
 	}
 
-
 	public void RegLab2() {
 		
 		Reg.createlab(pal3, "姓名:", 0, 0, 40, 30,Reg.MODEMAKE);
-		Reg.createlab(pal3, NameInfo.PreInfor[NameInfo._NAME], 2, 0, 100, 30,Reg.MODEMAKE);
+		Reg.createlab(pal3, NameInfo.PreInfor[NameInfo._NAME], 2, 0,100, 30,Reg.MODEMAKE);
 		Reg.createlab(pal3, "電話:", 0, 1, 40, 30,Reg.MODEMAKE);
 		Reg.createlab(pal3, NameInfo.PreInfor[NameInfo._TEL], 2, 1, 160, 30,Reg.MODEMAKE);
 		Reg.createlab(pal3, "上課時段:", 0, 2, 70, 30,Reg.MODEMAKE);
