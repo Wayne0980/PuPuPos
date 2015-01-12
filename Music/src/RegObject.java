@@ -9,6 +9,7 @@ public class RegObject {
 	DBlog NameInfo = new DBlog();
 	public final int MODETAB = 1;
 	public final int MODEMAKE = 2;
+	public final int MODETABCLASS = 3;
 	public final int MODENEW = 1;
 	public final int MODEALTER = 2;
 	public void RegObject(){
@@ -24,15 +25,18 @@ public class RegObject {
 			xshfit = 20;
 			yshfit = 85;
 			la1.setForeground(Color.ORANGE);
-			la1.setBounds(xshfit+(xpos*width),yshfit+(ypos*height),width,height);
 			
-		}else{
+		}else if(Mode == MODETABCLASS){
+			xshfit = 40;
+			yshfit = 40;
+			la1.setForeground(Color.BLACK);
+		}
+		else{
 			xshfit = 30;
 			yshfit = 40;
 			la1.setForeground(Color.WHITE);
-			la1.setBounds(xshfit+(xpos*xshfit),yshfit+(ypos*height),width,height);
-			
 		}
+		la1.setBounds(xshfit+(xpos*width),yshfit+(ypos*height),width,height);
 		la1.setFont(new java.awt.Font("Dialog",1,15));   
 		pal2.add(la1);
 
